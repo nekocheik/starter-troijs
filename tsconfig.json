@@ -1,0 +1,57 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": [
+    "env.d.ts",
+    "src/**/*.vue",
+    "src/**/*.ts"
+  ],
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "declarationMap": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "rules": {
+      "@typescript-eslint/ban-ts-comment": [
+        "error",
+        {
+          "ts-ignore": "allow-with-description"
+        }
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*",
+        "./dist/*"
+      ]
+    },
+    "downlevelIteration": true,
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "./src/Types/d.interfaces.ts",
+      "./src/components.d.ts",
+      "./src/auto-imports.d.ts",
+      "./src/hooks/Type.d.ts",
+    ]
+  },
+  "references": [
+    {
+      "path": "./tsconfig.vite-config.json"
+    }
+  ]
+}

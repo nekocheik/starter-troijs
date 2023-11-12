@@ -1,0 +1,20 @@
+{
+	"pools": [
+		{
+			"title": Text,
+			"description": Text,
+			// Premission can be not definde alos check this with robin
+			"totalGuardiansStaked": Number,
+			"LockTimeMission": Number, // 28
+			"status": beforPremission|Premission|mission|missionFinish,
+			"missionEnd": TimeStamp,
+			"premissionEnd": TimeStamp,
+			"rewardIcon": Url, // Exemple : /assets/icons/reward.svg
+			"RewardText": Text, // Exemple 10k lootboxes to share between the stakers
+			// this value is compute from mission premissionEnd to mission End  
+			"MissionEndText": Text, // Exemple :  July, 31st
+			// this value is not definde by a sc is definde by product owner
+			"rewardNumber": Number,
+		}
+	]
+}

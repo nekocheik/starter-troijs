@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Montserrat", system-ui, sans-serif;
+  }
+}
+
+.absolute-center-x {
+  @apply absolute left-[50%] translate-x-[-50%];
+}
+
+.absolute-center-y {
+  @apply absolute left-[50%] translate-x-[-50%];
+}
+
+
+.disabled {
+  @apply opacity-60 cursor-auto pointer-events-none;
+}
